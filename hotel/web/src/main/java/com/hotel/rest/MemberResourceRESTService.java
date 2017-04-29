@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.jboss.tools.examples.hotel.rest;
+package com.hotel.rest;
 
 import java.util.HashMap;
 import java.util.HashSet;

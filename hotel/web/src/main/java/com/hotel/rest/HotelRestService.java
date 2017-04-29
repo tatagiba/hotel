@@ -1,4 +1,4 @@
-package org.jboss.tools.examples.hotel.rest;
+package com.hotel.rest;
 
 import javax.enterprise.context.RequestScoped;
 import javax.ws.rs.GET;

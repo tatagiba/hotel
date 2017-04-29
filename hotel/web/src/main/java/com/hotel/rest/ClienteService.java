@@ -9,7 +9,7 @@ import javax.ws.rs.core.MediaType;
 
 @Path("/cliente/{cpf:[0-9][0-9]*}")
 @RequestScoped
-public class HotelRestService {
+public class ClienteService {
 	
 	@GET
     @Produces(MediaType.APPLICATION_JSON)

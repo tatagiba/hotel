@@ -1,0 +1,5 @@
+org/jboss/tools/examples/hotel/data/MemberRepository.class
+org/jboss/tools/examples/hotel/data/MemberListProducer.class
+org/jboss/tools/examples/hotel/service/MemberRegistration.class
+org/jboss/tools/examples/hotel/model/Member.class
+org/jboss/tools/examples/hotel/util/Resources.class

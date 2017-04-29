@@ -1,0 +1,5 @@
+org/jboss/tools/examples/hotel/rest/JaxRsActivator.class
+org/jboss/tools/examples/hotel/util/WebResources.class
+org/jboss/tools/examples/hotel/controller/MemberController.class
+org/jboss/tools/examples/hotel/rest/HotelRestService.class
+org/jboss/tools/examples/hotel/rest/MemberResourceRESTService.class

@@ -1,17 +1,18 @@
 package com.hotel.model;
 
-import java.sql.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.xml.bind.annotation.XmlRootElement;
 
 @Entity
+@XmlRootElement
 public class Cliente {
 
 	@Id
 	@Column
-	private int CPF;
+	private String CPF;
 	@Column
 	private String Nome;
 	@Column
@@ -31,12 +32,13 @@ public class Cliente {
 	@Column
 	private int Celular;
 	@Column
-	private Date Dt_nascimento;
+	private String Dt_nascimento;
 	
-	public int getCPF() {
+	
+	public String getCPF() {
 		return CPF;
 	}
-	public void setCPF(int cPF) {
+	public void setCPF(String cPF) {
 		CPF = cPF;
 	}
 	public String getNome() {
@@ -93,12 +95,14 @@ public class Cliente {
 	public void setCelular(int celular) {
 		Celular = celular;
 	}
-	public Date getDt_nascimento() {
+	public String getDt_nascimento() {
 		return Dt_nascimento;
 	}
-	public void setDt_nascimento(Date dt_nascimento) {
+	public void setDt_nascimento(String dt_nascimento) {
 		Dt_nascimento = dt_nascimento;
 	}
+
+	
 	
 	
 }

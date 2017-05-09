@@ -1,9 +1,15 @@
 package com.hotel.model;
 
 
+
+
+import java.util.Date;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 import javax.xml.bind.annotation.XmlRootElement;
 
 @Entity
@@ -12,7 +18,7 @@ public class Cliente {
 
 	@Id
 	@Column
-	private String CPF;
+	private long CPF;
 	@Column
 	private String Nome;
 	@Column
@@ -31,14 +37,14 @@ public class Cliente {
 	private int Telefone;
 	@Column
 	private int Celular;
-	@Column
-	private String Dt_nascimento;
+	@Temporal(TemporalType.DATE)
+	private Date Dt_nascimento;
 	
 	
-	public String getCPF() {
+	public long getCPF() {
 		return CPF;
 	}
-	public void setCPF(String cPF) {
+	public void setCPF(long cPF) {
 		CPF = cPF;
 	}
 	public String getNome() {
@@ -95,13 +101,13 @@ public class Cliente {
 	public void setCelular(int celular) {
 		Celular = celular;
 	}
-	public String getDt_nascimento() {
+	public Date getDt_nascimento() {
 		return Dt_nascimento;
 	}
-	public void setDt_nascimento(String dt_nascimento) {
+	public void setDt_nascimento(Date dt_nascimento) {
 		Dt_nascimento = dt_nascimento;
 	}
-
+	
 	
 	
 	

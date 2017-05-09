@@ -21,18 +21,29 @@ table tr:nth-child(even) {
 <div ng-app="pesquisa" ng-controller="pesquisaIndividual">
  
 <table> <tr>
-        <td>CPF</td>
-    <td>Nome</td>
+        <td>Nome</td>
+    <td>CPF</td>
+    <td>Data Nascimento</td>
     <td>Rua</td>
       <td>Numero</td>
-      <td>Data Nascimento</td>
-  </tr>
+      <td>Bairro</td>
+      <td>CEP</td>
+      <td>Complemento</td>
+      <td>Telefone</td>
+      <td>Celular</td>
+   </tr>
   <tr ng-repeat="x in greeting">
-     <td>{{ x.cpf }}</td>
-    <td>{{ x.nome }}</td>
+     <td>{{ x.nome }}</td>
+    <td>{{ x.cpf }}</td>
+    <td>{{ x.dt_nascimento }}</td>
     <td>{{ x.rua }}</td>
     <td>{{ x.numero }}</td>
-     <td>{{ x.dt_nascimento }}</td>
+    <td>{{x.bairro}} </td>
+    <td>{{x.cep}}</td>
+    <td>{{x.complemento}}</td>
+    <td>{{x.telefone}}</td>
+    <td>{{x.celular}}</td>
+     
   </tr>
   
 </table>

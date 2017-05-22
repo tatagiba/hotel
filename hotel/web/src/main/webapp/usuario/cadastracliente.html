@@ -1,17 +1,104 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="cliente" ng-controller="incluiCliente" >
 <head>
-<meta charset="UTF-8">
 <title>Cadastro de Cliente</title>
 </head>
-<body>
- <div ng-if="showOnPlatform('')">
-	<h2 class="padding text-primary bold col-xs-20" align="left">
+<meta charset="UTF-8">
+</head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="../lib/angular.min.js"></script>
+<script src="../lib/controller.js"></script>
+<script src="../lib/ngMask.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<body   ng-app="cliente">
+
+ <div class="form-group" >
+	<h2 class="padding text-primary bold col-md-12" align="center">
     	<i class="fa  ">&nbsp;</i>
         	<span>Cadastra Cliente</span>
     </h2>
 </div>
 
+<div class="form-group">
 
+	<div class="row">
+		<div class="col-md-1">
+			
+		</div>
+		<div class="col-md-1">
+			<label for="txtCpf">CPF:</label>
+		</div>
+		<div class="col-md-2">
+			<input type="text" id="txtCpf" class="form-control" ng-model="cliente.cpf" mask="999.999.999-99">
+		</div>
+	</div>
+	<p>
+	<div class="row">
+		<div class="col-md-1">
+			
+		</div>
+		<div class="col-md-1">
+			<label for="txtNome">Nome:</label>
+		</div>
+		<div class="col-md-5">
+			<input type="text" id="txtNome" class="form-control" ng-model="cliente.nome">
+		</div>
+	</div>
+	<p>
+	<div class="row">
+		<div class="col-md-1">
+			
+		</div>
+		<div class="col-md-1">
+			<label for="txtTel">Telefone:</label>
+		</div>
+		<div class="col-md-5">
+			<input type="text" id="txtTel" class="form-control" ng-model="cliente.tel" mask="(99)9999-9999">
+		</div>
+	</div>
+	<p>
+	<div class="row">
+		<div class="col-md-1">
+			
+		</div>
+		<div class="col-md-1">
+			<label for="txtCel">Celular:</label>
+		</div>
+		<div class="col-md-5">
+			<input type="text" id="txtCel" class="form-control" ng-model="cliente.cel" mask="(99)9999-9999">
+		</div>
+	</div>
+		<p>
+	<div class="row">
+		<div class="col-md-1">
+			
+		</div>
+		<div class="col-md-1">
+			<label for="txtNasc">Nascimento:</label>
+		</div>
+		<div class="col-md-5">
+			<input type="text" id="txtNasc" class="form-control" mask="99/99/9999" ng-model="cliente.nasc">
+		</div>
+	</div>
+	<p>
+	<div class="row">
+		<div class="col-md-1">
+			
+		</div>
+		<div class="col-md-1">
+			<label for="txtCep">CEP:</label>
+		</div>
+		<div class="col-md-5">
+			<input type="text" id="txtCep" class="form-control" ng-model="cliente.cep" mask="99999-999">
+		</div>
+	</div>
+	
+	
+</div>
+<button ng-click="vainessa()"> Incluir</button> 
+
+ </form>
+ 
 </body>
 </html>

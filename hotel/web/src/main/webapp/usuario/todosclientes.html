@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html >
+<html  >
 <head>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -17,22 +17,28 @@ table tr:nth-child(even) {
   background-color: #ffffff;
 }
 </style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="../lib/angular.min.js"></script>
 <script src="../lib/controller.js"></script>
+<script src="../lib/ngMask.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <body>
  
-  <div ng-if="showOnPlatform('')">
-	<h2 class="padding text-primary bold col-xs-20" align="left">
-       	<span>Consulta Clientes</span>
+ 
+ <div class="form-group" >
+	<h2 class="padding text-primary bold col-md-12" align="center">
+    	<i class="fa  ">&nbsp;</i>
+        	<span>Consulta Clientes</span>
     </h2>
 </div>
- 
- 
-<div ng-app="pesquisa" ng-controller="listaClientes">
- 
+ <div class="col-md-1">
+ </div>
+<div ng-app="cliente" ng-controller="incluiCliente">
+
 <table> <tr>
     <th>Nome</th>
-    <th>CPF</th>
+    <th> CPF </th>
     <th>Data Nascimento</th>
     <th>Rua</th>
     <th>Numero</th>
@@ -47,9 +53,9 @@ table tr:nth-child(even) {
 		<i class="fa fa-trash-o" data-toggle="tooltip" title="Detalhar Item"></i></th>
    </tr>
   <tr ng-repeat="x in greeting">
-     <td>{{ x.nome }}</td>
-    <td>{{ x.cpf }}</td>
-    <td>{{ x.dt_nascimento }}</td>
+     <td>{{ x.nome }} </td>
+    <td> {{ x.cpf }} </td>
+    <td>{{ x.dt_nascimento |  date : "dd/MM/y"}} </td>
     <td>{{ x.rua }}</td>
     <td>{{ x.numero }}</td>
     <td>{{x.bairro}} </td>

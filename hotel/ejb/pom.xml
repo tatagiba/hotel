@@ -57,6 +57,13 @@
             <artifactId>cdi-api</artifactId>
             <scope>provided</scope>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/log4j/log4j -->
+		<dependency>
+    		<groupId>log4j</groupId>
+    		<artifactId>log4j</artifactId>
+    		<version>1.2.17</version>
+		</dependency>
+        
 
         <!-- Import the JPA API, we use provided scope as the API is included in JBoss EAP 6 -->
         <dependency>
